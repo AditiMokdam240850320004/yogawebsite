@@ -1,0 +1,25 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 70px;
+}
+
+.text-purple {
+  color: #7f5af0;
+}
+
+.btn-purple {
+  background-color: #7f5af0;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+.btn-purple:hover {
+  background-color: #5a3dbb;
+}
+
+#home {
+  background: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
