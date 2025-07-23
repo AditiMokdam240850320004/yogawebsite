@@ -1,33 +1,174 @@
+/* Base Reset & Font Setup */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background: url('images/Yoga.png') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-dark);
+  scroll-behavior: smooth;
   padding-top: 70px;
 }
 
+
+/* Custom Colors */
 .text-purple {
-  color: #7f5af0;
+  color: #7E57C2;
 }
 
 .btn-purple {
-  background-color: #7f5af0;
-  color: #fff;
-  font-weight: bold;
-  border: none;
+  background-color: #7E57C2;
+  color: white;
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .btn-purple:hover {
-  background-color: #5a3dbb;
+  background-color: #5E35B1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(94, 53, 177, 0.3);
 }
 
-#home {
-  background: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+/* Hero Section */
+.hero {
   height: 100vh;
-  display: flex;
-  align-items: center;
+  background: url('https://images.unsplash.com/photo-1551892589-865f69869443?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  position: relative;
 }
 
-.blockquote {
-  background: #f8f9fa;
-  padding: 20px;
-  border-left: 5px solid #7f5af0;
-  border-radius: 5px;
+.hero .container {
+  z-index: 2;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.5);
+  background: url('images/Yoga.png') no-repeat center center/cover;
+  z-index: 1;
+}
+
+/* Fade-in Animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navbar */
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #7E57C2;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-purple {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+/* Hero Section Background */
+.hero {
+  height: 100vh;
+  background: url('images/Yoga3.png') no-repeat center center/cover;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.5); /* Dark overlay for contrast */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+.text-purple {
+  color: #7E57C2;
+}
+
+.bg-purple {
+  background-color: #7E57C2;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(126, 87, 194, 0.2);
+}
+
+.card-title {
+  font-weight: 600;
+}
+.text-purple {
+  color: #7E57C2;
+}
+
+.bg-purple {
+  background-color: #7E57C2;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(126, 87, 194, 0.2);
+}
+
+.card blockquote {
+  font-style: italic;
+  color: #555;
 }
