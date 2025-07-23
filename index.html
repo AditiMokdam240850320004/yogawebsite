@@ -2,188 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yoga-The Happy Asanas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yoga – The Happy Asanas</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand font-weight-bold text-purple" href="#">Yoga-The Happy Asanas</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+    <a class="navbar-brand fw-bold text-purple" href="index.html">Yoga – The Happy Asanas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#benefits" class="nav-link">Benefits</a></li>
-        <li class="nav-item"><a href="#types" class="nav-link">Types</a></li>
-        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="#feedback" class="nav-link">Feedback</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="benefits.html">Benefits</a></li>
+        <li class="nav-item"><a class="nav-link" href="types.html">Types</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Banner -->
-<header id="home" class="jumbotron jumbotron-fluid text-white text-center">
-  <div class="container">
-    <h1 class="display-4">Breathe. Stretch. Relax.</h1>
+<!-- Hero Section -->
+<header id="home" class="hero d-flex align-items-center text-center">
+  <div class="container fade-in-up">
+    <h1 class="display-4 fw-bold">Breathe. Stretch. Relax.</h1>
     <p class="lead">Welcome to your peaceful yoga journey.</p>
-    <a href="#about" class="btn btn-light mt-3">Learn More</a>
+    <form class="d-flex justify-content-center mt-4" role="search" action="types.html" method="get">
+  <input class="form-control w-75 w-md-50 me-2 shadow-sm" type="search" name="query" placeholder="Search yoga types..." aria-label="Search">
+  <button class="btn btn-purple shadow-sm" type="submit">Search</button>
+</form>
+
+
   </div>
 </header>
 
-<!-- About -->
-<section id="about" class="py-5">
-  <div class="container text-center">
-    <h2>About Us</h2>
-    <p class="lead">We help you find balance and inner peace through yoga, breathwork, and mindfulness.</p>
-  </div>
-</section>
-
-<!-- Benefits -->
-<section id="benefits" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2>Benefits of Yoga</h2>
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <i class="fas fa-heartbeat fa-3x text-purple mb-3"></i>
-        <h5>Improved Heart Health</h5>
-        <p>Regular yoga practice helps lower blood pressure and cholesterol.</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-brain fa-3x text-purple mb-3"></i>
-        <h5>Mental Clarity</h5>
-        <p>Yoga and meditation enhance focus and reduce stress.</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-running fa-3x text-purple mb-3"></i>
-        <h5>Better Flexibility</h5>
-        <p>Stretch your limits—literally! Increase flexibility and strength.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Types of Yoga -->
-<section id="types" class="py-5">
-  <div class="container text-center">
-    <h2>Types of Yoga</h2>
-    <div class="row mt-4">
-      <div class="col-md-3">
-        <h6>🧘‍♂️ Hatha Yoga</h6>
-        <p>Great for beginners. Slow and steady postures.</p>
-      </div>
-      <div class="col-md-3">
-        <h6>🔥 Vinyasa Yoga</h6>
-        <p>Dynamic flow. Great for cardio and strength.</p>
-      </div>
-      <div class="col-md-3">
-        <h6>🕉️ Kundalini Yoga</h6>
-        <p>Spiritual and energizing breathwork practices.</p>
-      </div>
-      <div class="col-md-3">
-        <h6>🧘 Restorative Yoga</h6>
-        <p>Gentle poses for deep relaxation and healing.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Services -->
-<section id="services" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2>Our Services</h2>
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <i class="fas fa-child fa-3x text-purple mb-3"></i>
-        <h5>Beginner Yoga</h5>
-        <p>Gentle movements and breathing for all levels.</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-spa fa-3x text-purple mb-3"></i>
-        <h5>Meditation</h5>
-        <p>Guided sessions to ease stress and anxiety.</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-heartbeat fa-3x text-purple mb-3"></i>
-        <h5>Therapeutic Yoga</h5>
-        <p>For healing, flexibility, and body awareness.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Feedback -->
-<section id="feedback" class="py-5 text-center">
-  <div class="container">
-    <h2 class="mb-4">What Our Students Say</h2>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <blockquote class="blockquote">
-          <p>"I feel so calm and centered after every session."</p>
-          <footer class="blockquote-footer">Bharti M.</footer>
-        </blockquote>
-      </div>
-      <div class="col-md-4 mb-3">
-        <blockquote class="blockquote">
-          <p>"Perfect balance of physical and mental health!"</p>
-          <footer class="blockquote-footer">Meera S.</footer>
-        </blockquote>
-      </div>
-      <div class="col-md-4 mb-3">
-        <blockquote class="blockquote">
-          <p>"My back pain disappeared thanks to the instructors."</p>
-          <footer class="blockquote-footer">Aditi M.</footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <form>
-          <input type="text" class="form-control mb-3" placeholder="Your Name" required>
-          <input type="email" class="form-control mb-3" placeholder="Your Email" required>
-          <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
-          <button class="btn btn-purple btn-block" type="submit">Send Message</button>
-        </form>
-      </div>
-      <div class="col-md-6 text-center">
-        <h5>Yoga-The Happy Asanas</h5>
-        <p>62,Tulsibag road, Mahal, Nagpur</p>
-        <p><i class="fas fa-phone"></i> +91 9579241898</p>
-        <p><i class="fas fa-envelope"></i>aditimokdam@gmail.com</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Footer -->
 <footer class="bg-light text-center py-3">
-  <small>&copy; 2025 Yoga-The Happy Asanas. All rights reserved.</small>
+  <small>&copy; 2025 Yoga – The Happy Asanas. All rights reserved.</small>
 </footer>
 
 <!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
